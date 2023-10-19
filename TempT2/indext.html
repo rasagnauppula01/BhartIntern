@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter|Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="calculateTemp(); return false" id="formcalc">
+        <label for="temp"><h1>Temperature to Converter</h1></label>
+        <br>
+        <input type="number" name="temp" id="temp" value="0">
+        <select name="tmp_diff" id="tmp_diff" class="tmp_diff">
+            <option value="cel">&#176;Celsius</option>
+            <option value="fah">&#176;Fahrenheit</option>
+            <br>
+            <input type="submit" value="Temperature" id="submit" class="submit">
+            <br>
+            <span id="result"></span>
+        </select>
+        </form>
+    </div>
+    <footer>
+	Design By Rasagna Uppula | <span>@bharatItern</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
